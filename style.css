@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Matter2;
+  src: url(./Matter-Light.ttf);
+}
+@font-face {
+  font-family: Matter3;
+  src: url(./Matter-Medium.ttf);
+}
+@font-face {
+  font-family: Matter;
+  src: url(./Matter-SemiBold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
