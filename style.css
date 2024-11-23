@@ -1,0 +1,784 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Matter;
+  color: #fff;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #131312;
+}
+nav {
+  width: 100%;
+  height: 6.5vw;
+  background-color: #131312;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  padding: 0 3.1vw;
+}
+nav h2 {
+  font-family: Matter;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.right-nav h1 {
+  font-family: Matter;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.right-nav i {
+  font-size: 1.4rem;
+  color: #000000;
+  padding: 0.5vw;
+  border-radius: 50%;
+  background-color: #ecedec;
+}
+
+/* *****************pageOne******************** */
+.page1 {
+  width: 100%;
+  height: calc(100vh - 6.5vw);
+  background-color: #131312;
+  color: #ecedec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.page1 h1 {
+  font-size: 5.3vw;
+  line-height: 6vw;
+  text-align: center;
+  width: 65%;
+  font-family: Matter;
+  text-transform: uppercase;
+
+  margin-top: -5vw;
+}
+.page1 h1 .span {
+  color: transparent;
+  -webkit-text-stroke: 0.35px white;
+}
+.page1-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 1.5vw;
+  position: absolute;
+  bottom: 1%;
+}
+.page1-bottom h1 {
+  font-size: 1vw;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.page1-bottom h1 span {
+  background-color: yellowgreen;
+  letter-spacing: normal;
+  font-weight: 600;
+  color: #000 !important;
+  padding: 1vw 1.5vw;
+  border-radius: 30px;
+  margin-left: 18vw;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* *****************pageTwo******************** */
+.page2 {
+  width: 100%;
+  height: 80vh;
+  background-color: #131312;
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page2-left {
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+}
+.page2-right {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  align-content: center;
+  font-family: Matter;
+  font-size: 1.54vw;
+}
+.page2-right h2 {
+  opacity: 1;
+  color: white;
+  font-weight: 500;
+}
+
+/* ***************pageThree************************** */
+.page3 {
+  width: 100%;
+  height: 135vh;
+  background-color: #131312;
+  padding: 2vw;
+  /* border: 1px solid white; */
+  /* overflow: hidden; */
+}
+
+.page3-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e1fd61;
+}
+.page3-line h2 {
+  font-family: Matter;
+  font-size: 1.5vw;
+  color: #fff;
+  opacity: 1;
+}
+.page3-img {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1vw;
+  margin-top: 2vw;
+  opacity: 1;
+  padding: 1vw;
+  /* border: 2px solid yellow; */
+}
+
+.page3-img-1 {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page3-img-1 img {
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.page3-img-2 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page3-img-2 img {
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.page3 h1 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-top: 1vw;
+}
+.page3 p {
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.432);
+  font-weight: 200;
+}
+/* ********************************pageFour******************************* */
+.page4 {
+  width: 100%;
+  height: 120vh;
+  background-color: #131312;
+  /* border: 1px solid white; */
+  overflow: hidden;
+  padding: 1vw;
+}
+
+.page4-img {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5vw;
+  margin-top: 2vw;
+  opacity: 1;
+  padding: 1vw;
+  /* border: 2px solid yellow; */
+}
+.page4-img-1 {
+  width: 55%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+.page4-img-1 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.page4-img-2 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page4-img-2 img {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.page4-img-3 {
+  width: 45%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+}
+.page4-img-3 img {
+  width: 100%;
+  /* height: 90%; */
+  background-size: cover;
+  background-position: center !important;
+  object-fit: cover;
+}
+
+.page4 h1 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-top: 1vw;
+}
+.page4 p {
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.432);
+  font-weight: 200;
+}
+
+/* *****************************pageFive************************** */
+.page5 {
+  width: 100%;
+  height: 120vh;
+  background-color: #131312;
+  padding: 1vw;
+}
+
+.page5-img {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5vw;
+  margin-top: 2vw;
+  opacity: 1;
+  padding: 1vw;
+  /* border: 2px solid yellow; */
+}
+.page5-img-1 {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+.page5-img-1 img {
+  width: 100%;
+  /* height: 100%; */
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.page5-img-2 {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page5-img-2 img {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.page5 h1 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-top: 1vw;
+}
+.page5 p {
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.432);
+  font-weight: 200;
+}
+
+/* **************************8page6************************ */
+.page6 {
+  width: 100%;
+  margin-top: 5vw;
+  height: 110vh;
+  background-color: #131312;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page6 button {
+  padding: 1.5vw 3vw;
+  background-color: transparent;
+  border: 1px solid #e1fd61;
+  color: #e1fd61;
+  border-radius: 40px;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
+  font-size: 1.3vw;
+  font-weight: 300;
+}
+.card-container {
+  width: 100%;
+  height: 100px;
+  /* background-color: orangered; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #5c5c5c;
+}
+.card-container h2 {
+  font-size: 1.2vw;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  position: absolute;
+  /* top: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  z-index: 8;
+  transition: all 0.3s ease-in-out;
+}
+.content img {
+  position: absolute;
+  width: 270px;
+  height: 350px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  right: 20%;
+  opacity: 0;
+}
+.content:hover img {
+  opacity: 1;
+}
+.content:hover {
+  background-color: #e1fd61;
+  color: black;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.left h1 {
+  font-size: 2vw;
+  font-weight: 500;
+}
+.right i {
+  font-size: 1.7vw;
+}
+/* .content img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 9;
+  width: 270px;
+  height: 350px;
+  right: 20%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  border-radius: 4px;
+} */
+/* ********************************pageSeven************************* */
+
+.page7 {
+  width: 100%;
+  height: 120vh;
+  background-color: #131312;
+  overflow: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: 120vh;
+  background-color: #131312;
+  position: relative;
+  /* border: 2px dotted white; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: syne;
+}
+.section button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 1vw 3vw;
+  outline: linen;
+}
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vw;
+}
+.back h1 {
+  opacity: 1;
+  width: 37%;
+  font-weight: 500;
+  font-family: Matter;
+}
+.back button {
+  opacity: 1;
+  text-transform: uppercase;
+  padding: 1.5vw 2vw;
+  background-color: transparent;
+  color: #e1fd61;
+  border: 1px solid #e1fd61;
+}
+.upper {
+  width: 100%;
+  height: 120vh;
+  /* border: 2px solid yellow; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.left-upper {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+.left-upper img {
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.left-bottom {
+  margin-top: -10vw;
+}
+.right-upper {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5vw;
+}
+
+.right-bottom {
+  margin-top: -5vw;
+}
+.right-upper img {
+  height: 50%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+/* pageEight************************ */
+.page8 {
+  margin-top: 5vw;
+  width: 100%;
+  height: 100vh;
+  background-color: #131312;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.page8-top {
+  width: 100%;
+  height: 45%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  padding: 1vw;
+}
+.right-top {
+  width: 70%;
+  height: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  /* padding: 1vw; */
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  /* border: 1px solid red; */
+}
+.right-top .img {
+  background-color: #161616;
+  width: 23%;
+  height: 50%;
+  /* border: 1px solid white; */
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  width: 50%;
+  height: 45%;
+  background-size: cover;
+}
+.page8-bottom {
+  width: 100%;
+  height: 45%;
+  /* border: 1px solid yellow; */
+  padding: 2vw;
+}
+.page8-bottom h2 {
+  width: 55%;
+  font-family: Matter;
+  font-size: 2.14vw;
+}
+.img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* page9************************ */
+.page9 {
+  width: 100%;
+  height: 80vh;
+  background-color: #131312;
+  padding: 2vw;
+}
+
+.swiper {
+  width: 100%;
+  height: 60%;
+  margin-top: 5vw;
+}
+
+.swiper-slide {
+  /* border: 1px solid white; */
+  text-align: center;
+  font-size: 18px;
+  background: #161616;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5vw;
+  gap: 1vw;
+}
+.swiper-slide i {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #e1fd61;
+}
+.swiper-slide p {
+  color: rgba(255, 255, 255, 0.356);
+  font-weight: 100;
+  font-size: 1vw;
+}
+.swiper-slide h2 {
+  font-size: 1.8vw;
+  color: white;
+  font-weight: 500;
+  margin-top: 2vw;
+}
+.swiper-slide .p {
+  color: white;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* page10*********************************** */
+.page10 {
+  width: 100%;
+  overflow: hidden;
+  height: 80vh;
+  background-color: #1f1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.page10-top {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page10-top-one {
+  width: 50%;
+  height: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: flex-start;
+  padding: 5vw;
+  justify-content: center;
+  flex-direction: column;
+}
+.page10-top-one h2 {
+  font-size: 1.7vw;
+}
+.page10-top-one p {
+  font-size: 1.4vw;
+  margin-top: 5px;
+}
+.page10-top-two {
+  width: 25%;
+  height: 100%;
+  /* background-color: greenyellow; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5vw;
+}
+.page10-top-two ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.1vw;
+  margin-top: 5px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.page10-top-three {
+  width: 25%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5vw;
+}
+.page10-top-three ul li {
+  list-style: none;
+  font-family: "Matter Light";
+  cursor: pointer;
+  font-size: 1.1vw;
+  margin-top: 5px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.page10-bottom {
+  /* border: 1px solid white; */
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page10-bottom h1 {
+  font-size: 19.7vw;
+  color: #323333;
+  margin-top: 4vw;
+  font-weight: 400;
+}
+
+/* Targeting the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  background-color: #131312;
+}
+
+/* Styling the track */
+t::-webkit-scrollbar-track {
+  background-color: #131312;
+  /* Optional: Rounded corners */
+}
+
+/* Styling the thumb */
+::-webkit-scrollbar-thumb {
+  background: #e1fd61; /* Thumb color */
+  /* Optional: Rounded corners */
+}
+
+/* Optional: Styling on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #def86b7c; /* Thumb color when hovered */
+}
