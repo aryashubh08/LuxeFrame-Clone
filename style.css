@@ -216,8 +216,8 @@ html.lenis body {
 }
 .page3-img-1 img {
   width: 100%;
+  height: 95%;
   background-size: cover;
-  object-fit: cover;
 }
 
 .page3-img-2 {
